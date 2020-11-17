@@ -54,7 +54,7 @@ class Stack(object):
             raise AttributeError("Empty stack")
         return self.items[-1]
 
-    def isEmpty(self):
+    def is_empty(self):
         '''
         True if the stack is empty, false otherwise
         :return: bool
@@ -112,7 +112,7 @@ class Queue(object):
         self.items = self.items[:-1]
         return last
 
-    def isEmpty(self):
+    def is_empty(self):
         '''
         True if queue is empty, false otherwise
         :return: bool
@@ -147,7 +147,7 @@ class Deque(object):
     def __repr__(self):
         return str(self.items)
 
-    def addFront(self, x):
+    def add_front(self, x):
         '''
         Add an item to the front of the dequeue
         :param x: added item {any}
@@ -159,7 +159,7 @@ class Deque(object):
         if len(self.items) == 1:
             self.datatype = type(x)
 
-    def addRear(self, x):
+    def add_rear(self, x):
         '''
         Add an item to the rear of the queue
         :param x: item {any, or list}
@@ -171,7 +171,7 @@ class Deque(object):
         if len(self.items) == 1:
             self.datatype = type(x)
 
-    def removeFront(self):
+    def remove_front(self):
         '''
         Remove and return first item in dequeue
         :return: updated stack {list}
@@ -182,7 +182,7 @@ class Deque(object):
         self.items = self.items[1:]
         return front
 
-    def removeRear(self):
+    def remove_rear(self):
         '''
         Remove and return last item in dequeue
         :return: queue item {any}
@@ -193,7 +193,7 @@ class Deque(object):
         self.items = self.items[:-1]
         return rear
 
-    def isEmpty(self):
+    def is_empty(self):
         '''
         True if dequeue is empty, False otherwise
         :return: bool
