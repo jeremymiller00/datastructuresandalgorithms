@@ -1,5 +1,5 @@
 from unittest import TestCase
-from binary_heap import BinaryHeap
+from trees.binary_heap import BinaryHeap
 
 class TestBinaryHeap(TestCase):
     def test_insert(self):
