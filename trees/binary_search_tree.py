@@ -145,7 +145,7 @@ class BinarySearchTree:
 
     def _find_successor(self):
         if self.has_right_child():
-            succ = self.right_child.___find_min()
+            succ = self.right_child._find_min()
         else:
             if self.parent:
                 if self.is_left_child():
@@ -156,7 +156,7 @@ class BinarySearchTree:
                     self.parent.right_child = self
         return succ
 
-    def ___find_min(self):
+    def _find_min(self):
         current = self
         while current.has_left_child():
             current = current.left_child
